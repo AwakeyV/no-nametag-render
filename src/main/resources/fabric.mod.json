@@ -3,20 +3,23 @@
 	"id": "no-nametag-render",
 	"version": "${version}",
 	"name": "No Nametag Render",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Disables rendering of nametag for nametagged entities",
 	"authors": [
-		"Me!"
+		"Awakeyv"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/user/Awakey",
+		"sources": "https://github.com/AwakeyV/no-nametag-render"
 	},
-	"license": "CC0-1.0",
+	"license": "All Rights Reserved",
 	"icon": "assets/no-nametag-render/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.awakey.nonametag.NoNametagRender"
+		],
+		"modmenu": [
+			"com.awakey.nonametag.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [

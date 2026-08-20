@@ -3,7 +3,7 @@
 	"package": "com.awakey.nonametag.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"DisableNameTagRendering"
 	],
 	"injectors": {
 		"defaultRequire": 1
