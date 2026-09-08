@@ -62,6 +62,7 @@ java {
 	// Sources are no longer remapped since 26.1 ships unobfuscated,
 	// but this still attaches a sourcesJar to the build task.
 	withSourcesJar()
+	toolchain { languageVersion = JavaLanguageVersion.of(25)}
 	sourceCompatibility = JavaVersion.VERSION_25
 	targetCompatibility = JavaVersion.VERSION_25
 }
