@@ -17,7 +17,7 @@ public abstract class DisableNameTagRendering<T extends Entity, S extends Entity
     protected abstract boolean shouldShowName(T entity, double squaredDistanceToCamera);
 
     @Redirect(
-            method = "extractRenderState",
+            method = "extractNameTags(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/client/renderer/entity/state/EntityRenderState;FDD)V",
             at = @At(
                     value = "INVOKE",
                     target = "Lnet/minecraft/client/renderer/entity/EntityRenderer;shouldShowName(Lnet/minecraft/world/entity/Entity;D)Z"
